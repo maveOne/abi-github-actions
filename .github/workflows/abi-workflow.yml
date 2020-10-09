@@ -15,3 +15,7 @@ jobs:
         run: |
           node --version
           npm --version
+      - name: Greet me
+        run: ./github/scripts/my-fn.js
+        env:
+          NAME: ${{ github.event.repository.name }}
