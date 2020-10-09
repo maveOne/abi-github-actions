@@ -1,0 +1,16 @@
+name: Greetings Action
+description: Hello hello
+author: ABI
+
+inputs:
+  name:
+    required: true
+    description: Enter your name
+
+runs:
+  using: node12
+  main: index.js
+
+branding:
+  icon: activity
+  color: blue

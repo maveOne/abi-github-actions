@@ -19,3 +19,7 @@ jobs:
         run: ./.github/scripts/my-fn.js
         env:
           NAME: ${{ github.event.repository.name }}
+      - name: Greet me from custom action
+        uses: ./greetings-action
+        with:
+          name: Max Mustermann
